@@ -1,7 +1,7 @@
 import getpass
 
 database = {"Administrator": "12345678", "User": "87654321"}
-username = str(input("Enter yout username: "))
+username = str(input("Enter your username: "))
 password = getpass.getpass("Enter your password: ")
 
 for i in database.keys():
