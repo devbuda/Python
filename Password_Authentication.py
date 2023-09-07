@@ -1,4 +1,4 @@
-# Password_Authentication - Victor Freire(devbuda)
+# Password Authentication - Victor Freire(devbuda)
 
 import getpass
 
