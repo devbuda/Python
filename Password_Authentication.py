@@ -1,3 +1,5 @@
+# Password_Authentication - Victor Freire(devbuda)
+
 import getpass
 
 database = {"Administrator": "12345678", "User": "87654321"}
