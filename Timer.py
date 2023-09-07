@@ -1,3 +1,5 @@
+# Timer - Victor Freire(devbuda)
+
 from time import sleep
 
 t = input("Informe o tempo(em segundos): ")
