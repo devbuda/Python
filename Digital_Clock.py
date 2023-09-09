@@ -1,4 +1,4 @@
-Digital_Clock - Victor Freire(devbuda)
+# Digital Clock - Victor Freire(devbuda)
 
 from tkinter import Label, Tk 
 import time
