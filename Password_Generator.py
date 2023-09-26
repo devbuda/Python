@@ -13,8 +13,8 @@ def generate_password(length):
 
     return senha
 
-comprimento_senha = int(input("Informe a quantidade de caracteres que deseja: "))
+comprimento_senha = int(input("Enter the number of characters you want: "))
 
 senha_gerada = generate_password(comprimento_senha)
 
-print(f"A senha gerada é: {senha_gerada}")
+print(f"The generated password is: {senha_gerada}")
