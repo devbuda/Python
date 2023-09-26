@@ -2,12 +2,12 @@
 
 from time import sleep
 
-t = input("Informe o tempo(em segundos): ")
+t = input("Enter the time (in seconds): ")
 
 if t.isdigit():
     t = int(t)
 else:
-    print("Entrada inválida")
+    print("Invalid Input")
     quit()
 
 while t:
@@ -19,4 +19,4 @@ while t:
     sleep(1)
     t -= 1
 
-print("\nTemporizador finalizado.\n")
+print("\nTimer ended.\n")
