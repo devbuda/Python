@@ -7,14 +7,14 @@ from string import punctuation
 
 def generate_password(length):
 
-    caracteres = ascii_letters + digits + punctuation
+    characters = ascii_letters + digits + punctuation
 
-    senha = "".join(choice(caracteres) for _ in range(length))
+    password = "".join(choice(characters) for _ in range(length))
 
-    return senha
+    return password
 
-comprimento_senha = int(input("Enter the number of characters you want: "))
+password_length = int(input("Enter the number of characters you want: "))
 
-senha_gerada = generate_password(comprimento_senha)
+generated_password = generate_password(password_length)
 
-print(f"The generated password is: {senha_gerada}")
+print(f"The generated password is: {generated_password}")
