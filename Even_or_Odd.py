@@ -1,4 +1,4 @@
-# Ímpar ou Par - Victor Freire(devbuda)
+# Even or Odd - Victor Freire(devbuda)
 
 import random
 
