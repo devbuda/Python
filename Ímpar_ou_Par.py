@@ -2,44 +2,44 @@
 
 import random
 
-def par_ou_impar():
-  vitorias = 0
-  derrotas = 0
+def even_or_odd():
+  wins = 0
+  defeats = 0
 
-  print("Bem-vindo ao Jogo de Par ou Ímpar!")
+  print("Welcome to the Odd or Even Game")
 
   while True:
     try:
-      jogador_escolha = input("Escolha par (p) ou ímpar (i): ").lower()
-      if jogador_escolha not in (”p”, “i”):
-        print("Escolha inválida. Por favor, escolha 'p' para par ou 'i' para ímpar.")
+      player_choose = input("Choose even (e) or odd (o): ").lower()
+      if player_choose not in ("e", "o"):
+        print("Invalid choice. Please choose 'e' for even or 'o' for odd.")
         continue
 
-      jogador_numero = int(input("Digite um número (1-10): "))
-      if jogador_numero < 1 or jogador_numero > 10:
-        print("Número fora do intervalo válido (1-10).")
+      player_number = int(input("Enter a number (1 - 10): "))
+      if player_number < 1 or player_number > 10:
+        print("Number outside the valid range (1 - 10)")
         continue
     except ValueError:
-      print("Entrada inválida. Digite um número válido.")
+      print("Invalid entry. Please enter a valid number.")
       continue
 
-    computador_numero = random.randint(1, 10)
-    total = jogador_numero + computador_numero
-    resultado = total % 2 == 0 and jogador_escolha == “p” or total % 2 == 1 and jogador_escolha == “i“
+    computer_number = random.randint(1, 10)
+    total = player_number + computer_number
+    result = total % 2 == 0 and player_choose == "o" or total % 2 == 1 and player_choose == "e"
 
-    print(f"Você escolheu {jogador_numero}, o computador escolheu {computador_numero}.")
-    if resultado:
-      print("Você ganhou!")
-      vitorias += 1
+    print(f"You chose {player_number}, the computer chose {computer_number}.")
+    if result:
+      print("You win!")
+      wins += 1
     else:
-      print("Você perdeu!")
-      derrotas += 1
+      print("You lost!")
+      defeats += 1
 
-    novamente = input("Quer jogar novamente? (s/n): ").lower()
-    if novamente != “s”:
+    again = input("Do you want to play again? (Y/N): ").lower()
+    if again != "y":
       break
 
-  print(f"Fim do jogo! Você teve {vitorias} vitória(s) e {derrotas} derrota(s).")
+  print(f"\nGame Over! You had {wins} victory(s) and {defeats} defeat(s).\n")
 
 if __name__ == "__main__":
-  par_ou_impar()
+  even_or_odd()
